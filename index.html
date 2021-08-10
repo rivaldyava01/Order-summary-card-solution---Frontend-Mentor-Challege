@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<!-- 
+  Order Summary
+
+  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!
+
+  Annual Plan
+  $59.99/year
+
+  Change
+
+  Proceed to Payment
+  Cancel Order
+-->
+
+  <div class="container">
+    <div class="card" id="main">
+      <img src="./images/illustration-hero.svg" id="hero">
+      <div id="promotion">
+        <h1>Order Summary</h1>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      </div>
+      <div class="card" id="price">
+        <div class="grid-container">
+          <img src="./images/icon-music.svg" id="music">
+          <p id="annualPlan"><b>Annual Plan</b></p>
+          <p id="yearPrice">$59.99/year</p>
+          <a href="#change" id="change">Change</a>
+        </div>
+      </div>
+      <button id="payment">Proceed to Payment</button>
+      <button id="cancel">Cancel Order</button>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rivaldy Avianto</a>.
+  </div>
+</body>
+</html>
+
+<style>
+  body{
+    background-image: url('./images/pattern-background-desktop.svg');
+  }
+
+  #main {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  font-family: arial;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 8px;
+}
+.card{
+  border-radius: 8px;
+}
+#price {
+  max-width: 300px;
+  margin: auto;
+  font-family: arial;
+  margin-top: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#hero {
+  max-width: 400px;
+  margin: auto;
+  border-radius: 8px;
+  }
+
+#promotion{
+  margin-left: 50px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: hsl(225, 100%, 94%);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 16px;
+}
+
+#music {
+  grid-row: 1 / span 4;
+  text-align: center;
+  margin: auto;
+}
+
+#annualPlan{
+  text-align: left;
+  margin: auto;
+
+}
+
+#yearPrice{
+  grid-row: 2 / span 3;
+  margin: auto;
+  text-align: left;
+  font-size: 14px;
+}
+
+#change{
+  grid-row: 1 / span 4;
+  margin: auto;
+  font-size: 12px;
+
+}
+
+button{
+  margin: auto;
+  margin-left: 50px;
+  min-width: 300px;
+  margin-bottom: 10px;
+  min-height: 35px;
+  border-radius: 8px;
+}
+
+#payment{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  border: none;
+}
+
+#cancel{
+  background-color: hsl(225, 100%, 98%);
+  color: hsl(224, 23%, 55%);
+  border: none;
+}
+
+</style>
